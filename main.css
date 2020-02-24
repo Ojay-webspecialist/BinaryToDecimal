@@ -1,0 +1,11 @@
+#headingParagraph{
+text-align: center;
+font-weight: bold;
+font-family: 'Courier New', Courier, monospace;
+color: rgb(0, 0, 255);
+}
+.footer{
+    font-family:cursive;
+    font-style: italic;
+    color: rgba(117, 114, 114, 0.673);
+}
