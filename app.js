@@ -2,12 +2,16 @@ let binaryInput = document.getElementById('binaryInput');
 let convertBut = document.getElementById('binaryConvert');
 const showResult = document.getElementById('showResult');
 const inputForm = document.getElementById('inputForm');
+const error_message= document.getElementById('error_message');
 
     
-
+            
+    
+    
 
     disable();
 
+  
 
 function getUserInput(){
     binaryInput.addEventListener('keyup',($event)=>{
@@ -16,22 +20,32 @@ function getUserInput(){
        $event.key == 'ArrowLeft' || $event.key == 'ArrowRight' || $event.key == 'Delete' || $event.key == 'Backspace'){
            
             console.log('You entered key ' + $event.key)
-
+            
         } else {
-            alert('enter 1 or 0');
+           
+            alert('Please enter 0 or 1');
+        
             inputForm.reset();
             disable();
+            
+          //  error_message.textContent ='';
         }
-
+        
     });
+
+   
+    
+
 
     binaryInput.addEventListener('input',()=>{
         if(binaryInput.value !=''){
            
             convertBut.disabled=false;
+            
         }
     });
     
+   
 }
 getUserInput();
        
@@ -57,10 +71,15 @@ function convert(){
 
 
     });
+
+    
 }
         convert();
 
     function disable(){
         convertBut.disabled =true;
+        
     }
+    
+       
 
