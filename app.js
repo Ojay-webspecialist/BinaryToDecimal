@@ -12,7 +12,7 @@ const error_message= document.getElementById('error_message');
     disable();
 
   
-
+showResult.textContent = '';
 function getUserInput(){
     binaryInput.addEventListener('keyup',($event)=>{
 
