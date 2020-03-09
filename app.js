@@ -16,9 +16,9 @@ showResult.textContent = '';
 function getUserInput(){
     binaryInput.addEventListener('keyup',($event)=>{
 
-        if($event.code == 'Digit0' || $event.code == 'Digit1'|| $event.key == '+' ||$event.key == '(' || $event.key == ')' || $event.key == '-' ||
-       $event.key == 'ArrowLeft' || $event.key == 'ArrowRight' || $event.key == 'Delete' || $event.key == 'Backspace'){
-         if($event.code == 'Numpad1' || $event.code == 'Numpad0') { 
+ if($event.code == 'Digit0' || $event.code == 'Digit1'|| $event.key == '+' ||$event.key == '(' || $event.key == ')' || $event.key == '-' ||
+       $event.key == 'ArrowLeft' || $event.key == 'ArrowRight' || $event.key == 'Delete' || $event.key == 'Backspace'|| $event.code == 'Numpad1' || $event.code == 'Numpad0'){
+        
             console.log('You entered key ' + $event.key)
             
         } else {
@@ -29,7 +29,6 @@ function getUserInput(){
             disable();
             
           //  error_message.textContent ='';
-        }
         }
         
     });
